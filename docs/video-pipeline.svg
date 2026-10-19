@@ -1,0 +1,997 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-7160 2456 12902 3668" font-family="Segoe UI, Arial, sans-serif">
+<rect x="-7160" y="2456" width="12902" height="3668" fill="#fafafa"/>
+<text x="-7120" y="2546" font-size="64" font-weight="600" fill="#212121">AI video generation pipeline (n8n)</text>
+<text x="-7120" y="2596" font-size="30" fill="#616161">183 nodes, structure only: names, types and connections; all parameters and prompts removed</text>
+<path d="M5398,4304 C5458,4304 5412,4320 5472,4320" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M5622,4320 C8289,4320 -2379,3760 288,3760" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1014,3744 C1169,3744 549,3488 704,3488" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M326,2768 C386,2768 292,2768 352,2768" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4490,3152 C-4430,3152 -4492,3152 -4432,3152" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4490,3152 C-4301,3152 -4301,3472 -4112,3472" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4650,3152 C-4590,3152 -4700,3152 -4640,3152" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4938,3744 C-4878,3744 -4988,3744 -4928,3744" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4842,3152 C-4782,3152 -4860,3152 -4800,3152" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-6394,3920 C-6173,3920 -6173,3920 -5952,3920" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M5174,4304 C5234,4304 5188,4304 5248,4304" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M4054,4304 C4114,4304 4052,4304 4112,4304" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M3382,3616 C3442,3616 3412,3712 3472,3712" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M3382,3616 C3442,3616 3412,3360 3472,3360" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M3382,3616 C3442,3616 3412,3536 3472,3536" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2918,3696 C2978,3696 2932,3984 2992,3984" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2918,3696 C3075,3696 3075,3616 3232,3616" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2918,3696 C3075,3696 3075,3616 3232,3616" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2918,3696 C3177,3696 2141,3728 2400,3728" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2742,3728 C2802,3728 2708,3696 2768,3696" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1206,4032 C1266,4032 1204,4016 1264,4016" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2342,2976 C2403,2976 2403,2976 2464,2976" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1910,3152 C2051,3152 2051,2976 2192,2976" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1910,3152 C2051,3152 2051,3200 2192,3200" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2614,2976 C2674,2976 2564,2816 2624,2816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2614,2976 C2674,2976 2564,3200 2624,3200" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M230,3760 C290,3760 228,3760 288,3760" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M54,3760 C114,3760 20,3760 80,3760" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4810,4496 C-4750,4496 -4860,4384 -4800,4384" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4810,4496 C-4750,4496 -4876,4640 -4816,4640" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4650,4384 C-4590,4384 -4668,4384 -4608,4384" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4458,4384 C-4398,4384 -4476,4384 -4416,4384" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-5226,3888 C-5166,3888 -5244,3152 -5184,3152" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-5226,3888 C-5157,3888 -5157,3744 -5088,3744" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-5226,3888 C-5061,3888 -5061,4048 -4896,4048" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-5226,3888 C-5093,3888 -5093,4496 -4960,4496" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-5658,4288 C-5583,4288 -5883,4128 -5808,4128" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M-5658,4128 C-5511,4128 -6099,3920 -5952,3920" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M-5034,3152 C-4974,3152 -5052,3152 -4992,3152" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-6890,3840 C-6830,3840 -6860,3840 -6800,3840" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-5242,4128 C-4887,4128 -6307,3920 -5952,3920" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M3350,3040 C3497,3040 2909,2816 3056,2816" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M3158,3024 C3218,3024 2996,2816 3056,2816" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M3206,2816 C3387,2816 3387,2816 3568,2816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2550,3728 C2610,3728 2532,3728 2592,3728" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1926,3728 C2163,3728 2163,3728 2400,3728" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1398,3488 C1458,3488 1348,3344 1408,3344" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1398,3488 C1458,3488 1364,3520 1424,3520" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2982,2816 C3042,2816 2996,2816 3056,2816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1414,3152 C1587,3152 1587,3152 1760,3152" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M918,3152 C1091,3152 1091,3152 1264,3152" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M166,2768 C226,2768 116,2768 176,2768" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M694,3488 C754,3488 644,3488 704,3488" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1782,3536 C2529,3536 -459,3760 288,3760" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M854,3488 C955,3488 955,3488 1056,3488" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M454,4048 C537,4048 205,3760 288,3760" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M438,3760 C498,3760 484,3488 544,3488" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M3830,4304 C3890,4304 3844,4304 3904,4304" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M4726,4304 C4786,4304 4740,4304 4800,4304" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M4950,4304 C7561,4304 -2883,3744 -272,3744" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M4950,4304 C5010,4304 4964,4304 5024,4304" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M3798,3712 C5553,3712 -1467,3760 288,3760" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M4502,4304 C4562,4304 4516,4304 4576,4304" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M582,4048 C729,4048 141,3760 288,3760" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M-122,3744 C-53,3744 -53,2768 16,2768" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-122,3744 C-62,3744 -156,3760 -96,3760" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-6602,3376 C-6542,3376 -6588,3376 -6528,3376" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M4262,4304 C4322,4304 4292,4304 4352,4304" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M502,2768 C635,2768 635,3152 768,3152" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M502,2768 C1347,2768 1347,2976 2192,2976" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M502,2768 C1563,2768 1563,2816 2624,2816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1206,3488 C1266,3488 1188,3488 1248,3488" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-6538,4128 C-6245,4128 -6245,3920 -5952,3920" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M3574,3984 C3634,3984 3620,4304 3680,4304" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1574,3520 C1634,3520 1572,3536 1632,3536" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M3622,3712 C3682,3712 3588,3712 3648,3712" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1414,4016 C1595,4016 1595,3728 1776,3728" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1414,4016 C1595,4016 1595,3952 1776,3952" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1414,4016 C1603,4016 1603,4144 1792,4144" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4778,3744 C-4718,3744 -4828,3744 -4768,3744" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2774,2816 C2834,2816 2772,2816 2832,2816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M3142,3984 C3283,3984 3283,3984 3424,3984" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M3142,3984 C3202,3984 3140,4160 3200,4160" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M3350,4160 C3410,4160 3364,4160 3424,4160" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M3574,4160 C3634,4160 3620,4304 3680,4304" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1558,3344 C1643,3344 1643,3344 1728,3344" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-6330,4128 C-6141,4128 -6141,3920 -5952,3920" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M-4266,4384 C-4206,4384 -4284,4384 -4224,4384" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M54,4816 C114,4816 52,4816 112,4816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1350,4848 C1410,4848 1300,4848 1360,4848" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1718,4848 C1779,4848 1779,4832 1840,4832" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1718,4848 C1915,4848 1915,5040 2112,5040" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2374,4832 C2434,4832 2372,4832 2432,4832" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-3306,3856 C-3246,3856 -3260,3904 -3200,3904" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M262,4816 C322,4816 228,4816 288,4816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M614,4784 C674,4784 596,4848 656,4848" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M614,4784 C969,4784 -451,4816 -96,4816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M806,4848 C866,4848 772,4848 832,4848" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-6314,4336 C-6133,4336 -6133,3920 -5952,3920" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M-6170,4128 C-6061,4128 -6061,3920 -5952,3920" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M-5914,4128 C-5854,4128 -6012,3920 -5952,3920" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M-5786,4128 C-5703,4128 -6035,3920 -5952,3920" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M-4618,3744 C-4558,3744 -4668,3744 -4608,3744" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4458,3744 C-4398,3744 -4492,3680 -4432,3680" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4458,3744 C-4398,3744 -4524,3840 -4464,3840" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4314,3840 C-4254,3840 -4348,3840 -4288,3840" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-5802,3920 C-5693,3920 -5693,3920 -5584,3920" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4282,3152 C-4045,3152 -4045,2800 -3808,2800" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4282,3152 C-4222,3152 -4332,3280 -4272,3280" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-3658,2800 C-1821,2800 -1821,2768 16,2768" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-3658,2800 C-3517,2800 -3517,2912 -3376,2912" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-3962,3472 C-3902,3472 -4044,3648 -3984,3648" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-3834,3648 C-3645,3648 -3645,3856 -3456,3856" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-3226,2912 C-3166,2912 -3260,2912 -3200,2912" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4746,4048 C-4686,4048 -4796,4048 -4736,4048" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4282,3680 C-4222,3680 -4300,3680 -4240,3680" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4138,3840 C-4078,3840 -4156,3840 -4096,3840" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4122,3280 C-4062,3280 -4172,3472 -4112,3472" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-202,4544 C-142,4544 -156,4816 -96,4816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4586,4048 C-4526,4048 -4636,4048 -4576,4048" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4426,4048 C-4366,4048 -4476,4048 -4416,4048" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4266,4048 C-4206,4048 -4316,4048 -4256,4048" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1402,4400 C-1342,4400 -1420,4256 -1360,4256" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1402,4400 C-877,4400 -877,4784 -352,4784" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1210,4256 C-1150,4256 -1244,4256 -1184,4256" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1034,4256 C-974,4256 -1068,4240 -1008,4240" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-858,4240 C-797,4240 -797,4256 -736,4256" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-858,4240 C-798,4240 -908,4336 -848,4336" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-698,4336 C-543,4336 -1163,4240 -1008,4240" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-586,4256 C-526,4256 -636,4352 -576,4352" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-202,4784 C-142,4784 -156,4816 -96,4816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1146,3872 C-1086,3872 -1180,3872 -1120,3872" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-970,3872 C-910,3872 -1004,3856 -944,3856" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-794,3856 C-709,3856 -709,3872 -624,3872" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-794,3856 C-734,3856 -844,3936 -784,3936" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-634,3936 C-479,3936 -1099,3856 -944,3856" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-474,3872 C-414,3872 -508,3936 -448,3936" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-298,3936 C-197,3936 -197,4816 -96,4816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-298,4128 C-197,4128 -197,4816 -96,4816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1274,4064 C-1214,4064 -1356,3872 -1296,3872" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1274,4064 C-861,4064 -861,4128 -448,4128" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1146,3456 C-1086,3456 -1180,3456 -1120,3456" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-970,3456 C-910,3456 -1004,3440 -944,3440" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-794,3440 C-709,3440 -709,3456 -624,3456" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-794,3440 C-734,3440 -844,3520 -784,3520" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-634,3520 C-479,3520 -1099,3440 -944,3440" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-474,3456 C-414,3456 -524,3456 -464,3456" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1274,3648 C-1214,3648 -1356,3456 -1296,3456" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1274,3648 C-869,3648 -869,3680 -464,3680" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M150,4560 C210,4560 148,4560 208,4560" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M358,4560 C418,4560 356,4528 416,4528" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M566,4528 C849,4528 -283,4560 0,4560" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-314,3456 C-157,3456 -157,4560 0,4560" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-314,3680 C-157,3680 -157,4560 0,4560" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1158,4848 C1218,4848 1140,4848 1200,4848" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M982,4848 C1042,4848 948,4848 1008,4848" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M982,4848 C1042,4848 948,4624 1008,4624" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M1990,4832 C2050,4832 1988,4832 2048,4832" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-6122,4336 C-6037,4336 -6037,3920 -5952,3920" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M-6650,3840 C-6590,3840 -6604,3728 -6544,3728" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-6650,3840 C-6590,3840 -6604,3920 -6544,3920" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-6394,3728 C-6334,3728 -6396,3728 -6336,3728" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-6010,3728 C-5950,3728 -6012,3920 -5952,3920" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1162,3024 C-1102,3024 -1196,3024 -1136,3024" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-986,3024 C-926,3024 -1020,3008 -960,3008" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-810,3008 C-725,3008 -725,3024 -640,3024" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-810,3008 C-750,3008 -860,3088 -800,3088" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-650,3088 C-495,3088 -1115,3008 -960,3008" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-490,3024 C-430,3024 -540,3024 -480,3024" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1290,3216 C-1230,3216 -1372,3024 -1312,3024" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1290,3216 C-885,3216 -885,3248 -480,3248" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-330,3024 C-109,3024 -109,4816 112,4816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-330,3248 C-109,3248 -109,4816 112,4816" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-6186,3728 C-6126,3728 -6220,3728 -6160,3728" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M422,3552 C585,3552 -67,3312 96,3312" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M230,3568 C297,3568 29,3312 96,3312" fill="none" stroke="#9e9e9e" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M1510,4848 C1570,4848 1508,4848 1568,4848" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1562,4032 C-1501,4032 -1501,3216 -1440,3216" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1562,4032 C-1493,4032 -1493,3648 -1424,3648" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1562,4032 C-1493,4032 -1493,4064 -1424,4064" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-1562,4032 C-1502,4032 -1612,4400 -1552,4400" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-3898,4048 C-3677,4048 -3677,3856 -3456,3856" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-5434,3920 C-5374,3920 -5436,3888 -5376,3888" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-2458,3872 C-2398,3872 -2444,3872 -2384,3872" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M694,5712 C754,5712 660,5712 720,5712" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M870,5712 C930,5712 820,5712 880,5712" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2198,4832 C2258,4832 2164,4832 2224,4832" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M2262,5040 C5121,5040 -6315,3856 -3456,3856" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-4106,4048 C-4046,4048 -4108,4048 -4048,4048" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M438,4816 C545,4816 117,5056 224,5056" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M438,4816 C498,4816 404,4784 464,4784" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-2234,3872 C-2174,3872 -2236,3872 -2176,3872" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-2026,3872 C-1869,3872 -1869,4032 -1712,4032" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-426,4352 C-366,4352 -412,4544 -352,4544" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-2810,3872 C-2750,3872 -2844,3872 -2784,3872" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-2634,3872 C-2574,3872 -2668,3872 -2608,3872" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<path d="M-3050,3904 C-2990,3904 -3020,3872 -2960,3872" fill="none" stroke="#9e9e9e" stroke-width="3"/>
+<g opacity="1"><rect x="5248" y="4272" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="5248" y="4272" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="5270" y="4294" font-size="17" fill="#212121">Send message and</text>
+<text x="5270" y="4313" font-size="17" fill="#212121">wait for response1</text>
+</g>
+<g opacity="1"><rect x="5472" y="4288" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="5472" y="4288" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="5494" y="4310" font-size="17" fill="#212121">Edit Fields15</text>
+</g>
+<g opacity="1"><rect x="864" y="3712" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="864" y="3712" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="886" y="3734" font-size="17" fill="#212121">Simple Memory4</text>
+</g>
+<g opacity="1"><rect x="176" y="2736" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="176" y="2736" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="198" y="2758" font-size="17" fill="#212121">Edit Fields16</text>
+</g>
+<g opacity="1"><rect x="-4640" y="3120" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4640" y="3120" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4618" y="3142" font-size="17" fill="#212121">Edit Fields17</text>
+</g>
+<g opacity="1"><rect x="-4800" y="3120" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4800" y="3120" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4778" y="3142" font-size="17" fill="#212121">Edit Fields18</text>
+</g>
+<g opacity="1"><rect x="-5088" y="3712" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-5088" y="3712" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-5066" y="3734" font-size="17" fill="#212121">Edit Fields7</text>
+</g>
+<g opacity="1"><rect x="-4992" y="3120" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-4992" y="3120" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-4970" y="3142" font-size="17" fill="#212121">Execute Command4</text>
+</g>
+<g opacity="1"><rect x="-6544" y="3888" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-6544" y="3888" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-6522" y="3910" font-size="17" fill="#212121">Edit Fields19</text>
+</g>
+<g opacity="1"><rect x="3472" y="3504" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="3472" y="3504" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="3494" y="3526" font-size="17" fill="#212121">Send Final video5</text>
+</g>
+<g opacity="1"><rect x="3568" y="2784" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="3568" y="2784" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="3590" y="2806" font-size="17" fill="#212121">Send idea and</text>
+<text x="3590" y="2825" font-size="17" fill="#212121">wait6</text>
+</g>
+<g opacity="0.45"><rect x="5024" y="4272" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="5024" y="4272" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="5046" y="4294" font-size="17" fill="#212121">Execute Command9</text>
+</g>
+<g opacity="1"><rect x="3904" y="4272" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="3904" y="4272" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="3926" y="4294" font-size="17" fill="#212121">Wait1</text>
+</g>
+<g opacity="1"><rect x="3232" y="3584" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="3232" y="3584" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="3254" y="3606" font-size="17" fill="#212121">Switch3</text>
+</g>
+<g opacity="1"><rect x="2768" y="3664" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="2768" y="3664" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="2790" y="3686" font-size="17" fill="#212121">Switch4</text>
+</g>
+<g opacity="1"><rect x="3472" y="3328" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="3472" y="3328" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="3494" y="3350" font-size="17" fill="#212121">Send Final video6</text>
+</g>
+<g opacity="1"><rect x="2592" y="3696" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="2592" y="3696" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="2614" y="3718" font-size="17" fill="#212121">Get scene 2</text>
+</g>
+<g opacity="1"><rect x="1056" y="4000" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="1056" y="4000" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="1078" y="4022" font-size="17" fill="#212121">Generate scene</text>
+</g>
+<g opacity="1"><rect x="2192" y="2944" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="2192" y="2944" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="2214" y="2966" font-size="17" fill="#212121">Merge4</text>
+</g>
+<g opacity="1"><rect x="1760" y="3120" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="1760" y="3120" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="1782" y="3142" font-size="17" fill="#212121">Continue?</text>
+</g>
+<g opacity="1"><rect x="2192" y="3168" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="2192" y="3168" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="2214" y="3190" font-size="17" fill="#212121">Get feedback2</text>
+</g>
+<g opacity="1"><rect x="2464" y="2944" width="150" height="64" rx="12" fill="white" stroke="#2e7d32" stroke-width="5"/>
+<rect x="2464" y="2944" width="14" height="64" rx="6" fill="#2e7d32"/>
+<text x="2486" y="2966" font-size="17" fill="#212121">Upload a video1</text>
+</g>
+<g opacity="1"><rect x="80" y="3728" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="80" y="3728" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="102" y="3750" font-size="17" fill="#212121">Edit Fields20</text>
+</g>
+<g opacity="1"><rect x="-96" y="3728" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-96" y="3728" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-74" y="3750" font-size="17" fill="#212121">Aggregate1</text>
+</g>
+<g opacity="1"><rect x="-4816" y="4608" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="-4816" y="4608" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="-4794" y="4630" font-size="17" fill="#212121">Send idea and</text>
+<text x="-4794" y="4649" font-size="17" fill="#212121">wait7</text>
+</g>
+<g opacity="1"><rect x="-4416" y="4352" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="-4416" y="4352" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="-4394" y="4374" font-size="17" fill="#212121">Send idea and</text>
+<text x="-4394" y="4393" font-size="17" fill="#212121">wait8</text>
+</g>
+<g opacity="1"><rect x="-4960" y="4464" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4960" y="4464" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4938" y="4486" font-size="17" fill="#212121">If</text>
+</g>
+<g opacity="1"><rect x="-4800" y="4352" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4800" y="4352" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4778" y="4374" font-size="17" fill="#212121">Edit Fields21</text>
+</g>
+<g opacity="1"><rect x="-4608" y="4352" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="-4608" y="4352" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="-4586" y="4374" font-size="17" fill="#212121">Send idea and</text>
+<text x="-4586" y="4393" font-size="17" fill="#212121">wait9</text>
+</g>
+<g opacity="1"><rect x="-5376" y="3856" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-5376" y="3856" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-5354" y="3878" font-size="17" fill="#212121">Switch5</text>
+</g>
+<g opacity="1"><rect x="-5808" y="4256" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="-5808" y="4256" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="-5786" y="4278" font-size="17" fill="#212121">Embeddings OpenAI3</text>
+</g>
+<g opacity="1"><rect x="-5808" y="4096" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="-5808" y="4096" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="-5786" y="4118" font-size="17" fill="#212121">Postgres PGVector</text>
+<text x="-5786" y="4137" font-size="17" fill="#212121">Store3</text>
+</g>
+<g opacity="1"><rect x="-5184" y="3120" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-5184" y="3120" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-5162" y="3142" font-size="17" fill="#212121">Edit Fields22</text>
+</g>
+<g opacity="1"><rect x="-7040" y="3808" width="150" height="64" rx="12" fill="white" stroke="#ff6d5a" stroke-width="5"/>
+<rect x="-7040" y="3808" width="14" height="64" rx="6" fill="#ff6d5a"/>
+<text x="-7018" y="3830" font-size="17" fill="#212121">Telegram Trigger</text>
+</g>
+<g opacity="1"><rect x="-5392" y="4096" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="-5392" y="4096" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="-5370" y="4118" font-size="17" fill="#212121">Simple Memory5</text>
+</g>
+<g opacity="1"><rect x="3200" y="3008" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="3200" y="3008" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="3222" y="3030" font-size="17" fill="#212121">Default Data</text>
+<text x="3222" y="3049" font-size="17" fill="#212121">Loader1</text>
+</g>
+<g opacity="1"><rect x="3008" y="2992" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="3008" y="2992" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="3030" y="3014" font-size="17" fill="#212121">Embeddings OpenAI5</text>
+</g>
+<g opacity="1"><rect x="3056" y="2784" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="3056" y="2784" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="3078" y="2806" font-size="17" fill="#212121">Postgres PGVector</text>
+<text x="3078" y="2825" font-size="17" fill="#212121">Store5</text>
+</g>
+<g opacity="1"><rect x="2400" y="3696" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="2400" y="3696" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="2422" y="3718" font-size="17" fill="#212121">Wait 3 min1</text>
+</g>
+<g opacity="1"><rect x="1776" y="3696" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="1776" y="3696" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="1798" y="3718" font-size="17" fill="#212121">Send Final video7</text>
+</g>
+<g opacity="1"><rect x="1248" y="3456" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="1248" y="3456" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="1270" y="3478" font-size="17" fill="#212121">Pass?1</text>
+</g>
+<g opacity="1"><rect x="2832" y="2784" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="2832" y="2784" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="2854" y="2806" font-size="17" fill="#212121">Analyze video1</text>
+</g>
+<g opacity="1"><rect x="1264" y="3120" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="1264" y="3120" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="1286" y="3142" font-size="17" fill="#212121">Get feedback3</text>
+</g>
+<g opacity="1"><rect x="768" y="3120" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="768" y="3120" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="790" y="3142" font-size="17" fill="#212121">Send Final video1</text>
+</g>
+<g opacity="1"><rect x="16" y="2736" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="16" y="2736" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="38" y="2758" font-size="17" fill="#212121">Concatenate clips1</text>
+</g>
+<g opacity="1"><rect x="544" y="3456" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="544" y="3456" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="566" y="3478" font-size="17" fill="#212121">Edit Fields23</text>
+</g>
+<g opacity="1"><rect x="1632" y="3504" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="1632" y="3504" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="1654" y="3526" font-size="17" fill="#212121">Edit Fields24</text>
+</g>
+<g opacity="1"><rect x="704" y="3456" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="704" y="3456" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="726" y="3478" font-size="17" fill="#212121">Prompt Reviewer</text>
+<text x="726" y="3497" font-size="17" fill="#212121">Agent1</text>
+</g>
+<g opacity="1"><rect x="304" y="4016" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="304" y="4016" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="326" y="4038" font-size="17" fill="#212121">Self-Check1</text>
+</g>
+<g opacity="1"><rect x="288" y="3728" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="288" y="3728" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="310" y="3750" font-size="17" fill="#212121">Message a model1</text>
+</g>
+<g opacity="1"><rect x="3680" y="4272" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="3680" y="4272" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="3702" y="4294" font-size="17" fill="#212121">Edit Fields25</text>
+</g>
+<g opacity="1"><rect x="4576" y="4272" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="4576" y="4272" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="4598" y="4294" font-size="17" fill="#212121">Send video and</text>
+<text x="4598" y="4313" font-size="17" fill="#212121">wait1</text>
+</g>
+<g opacity="1"><rect x="4800" y="4272" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="4800" y="4272" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="4822" y="4294" font-size="17" fill="#212121">Continue?3</text>
+</g>
+<g opacity="1"><rect x="3648" y="3680" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="3648" y="3680" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="3670" y="3702" font-size="17" fill="#212121">Set error1</text>
+</g>
+<g opacity="1"><rect x="4352" y="4272" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="4352" y="4272" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="4374" y="4294" font-size="17" fill="#212121">Send a video1</text>
+</g>
+<g opacity="1"><rect x="432" y="4016" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="432" y="4016" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="454" y="4038" font-size="17" fill="#212121">Simple Memory6</text>
+</g>
+<g opacity="1"><rect x="-272" y="3712" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-272" y="3712" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-250" y="3734" font-size="17" fill="#212121">Batch of</text>
+</g>
+<g opacity="1"><rect x="-6528" y="3344" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="-6528" y="3344" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="-6506" y="3366" font-size="17" fill="#212121">Send idea and</text>
+<text x="-6506" y="3385" font-size="17" fill="#212121">wait10</text>
+</g>
+<g opacity="1"><rect x="-6752" y="3344" width="150" height="64" rx="12" fill="white" stroke="#ff6d5a" stroke-width="5"/>
+<rect x="-6752" y="3344" width="14" height="64" rx="6" fill="#ff6d5a"/>
+<text x="-6730" y="3366" font-size="17" fill="#212121">Send invitation1</text>
+</g>
+<g opacity="1"><rect x="4112" y="4272" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="4112" y="4272" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="4134" y="4294" font-size="17" fill="#212121">Read/Write Files</text>
+<text x="4134" y="4313" font-size="17" fill="#212121">from Disk3</text>
+</g>
+<g opacity="1"><rect x="352" y="2736" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="352" y="2736" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="374" y="2758" font-size="17" fill="#212121">Read/Write Files</text>
+<text x="374" y="2777" font-size="17" fill="#212121">from Disk4</text>
+</g>
+<g opacity="0.45"><rect x="1056" y="3456" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="1056" y="3456" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="1078" y="3478" font-size="17" fill="#212121">Edit Fields27</text>
+</g>
+<g opacity="1"><rect x="-6688" y="4096" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="-6688" y="4096" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="-6666" y="4118" font-size="17" fill="#212121">HTTP request tool</text>
+<text x="-6666" y="4137" font-size="17" fill="#212121">(name withheld)</text>
+</g>
+<g opacity="1"><rect x="3424" y="3952" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="3424" y="3952" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="3446" y="3974" font-size="17" fill="#212121">Execute Command12</text>
+</g>
+<g opacity="1"><rect x="1424" y="3488" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="1424" y="3488" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="1446" y="3510" font-size="17" fill="#212121">Send Final video8</text>
+</g>
+<g opacity="1"><rect x="3472" y="3680" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="3472" y="3680" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="3494" y="3702" font-size="17" fill="#212121">Send provider</text>
+<text x="3494" y="3721" font-size="17" fill="#212121">error message</text>
+</g>
+<g opacity="1"><rect x="1264" y="3984" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="1264" y="3984" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="1286" y="4006" font-size="17" fill="#212121">Switch6</text>
+</g>
+<g opacity="1"><rect x="1792" y="4112" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="1792" y="4112" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="1814" y="4134" font-size="17" fill="#212121">Send Final video10</text>
+</g>
+<g opacity="1"><rect x="1776" y="3920" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="1776" y="3920" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="1798" y="3942" font-size="17" fill="#212121">Send top-up</text>
+<text x="1798" y="3961" font-size="17" fill="#212121">message</text>
+</g>
+<g opacity="1"><rect x="-4928" y="3712" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4928" y="3712" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4906" y="3734" font-size="17" fill="#212121">Edit Fields28</text>
+</g>
+<g opacity="1"><rect x="2624" y="3168" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="2624" y="3168" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="2646" y="3190" font-size="17" fill="#212121">Eroare ytb</text>
+<text x="2646" y="3209" font-size="17" fill="#212121">connection</text>
+</g>
+<g opacity="1"><rect x="2624" y="2784" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="2624" y="2784" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="2646" y="2806" font-size="17" fill="#212121">Merge5</text>
+</g>
+<g opacity="1"><rect x="2992" y="3952" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="2992" y="3952" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="3014" y="3974" font-size="17" fill="#212121">Aspect Ratio?</text>
+</g>
+<g opacity="1"><rect x="3424" y="4128" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="3424" y="4128" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="3446" y="4150" font-size="17" fill="#212121">Execute Command14</text>
+</g>
+<g opacity="1"><rect x="3200" y="4128" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="3200" y="4128" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="3222" y="4150" font-size="17" fill="#212121">Execute Command5</text>
+</g>
+<g opacity="0.45"><rect x="1408" y="3312" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="1408" y="3312" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="1430" y="3334" font-size="17" fill="#212121">Improve prompt</text>
+</g>
+<g opacity="1"><rect x="1728" y="3312" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="1728" y="3312" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="1750" y="3334" font-size="17" fill="#212121">Edit Fields26</text>
+</g>
+<g opacity="1"><rect x="-6480" y="4096" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-6480" y="4096" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-6458" y="4118" font-size="17" fill="#212121">GetExecutionContents</text>
+</g>
+<g opacity="1"><rect x="-4224" y="4352" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="-4224" y="4352" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="-4202" y="4374" font-size="17" fill="#212121">Send idea and</text>
+<text x="-4202" y="4393" font-size="17" fill="#212121">wait11</text>
+</g>
+<g opacity="0.45"><rect x="-96" y="4784" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-96" y="4784" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-74" y="4806" font-size="17" fill="#212121">Wait2</text>
+</g>
+<g opacity="1"><rect x="2224" y="4800" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="2224" y="4800" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="2246" y="4822" font-size="17" fill="#212121">Send message and</text>
+<text x="2246" y="4841" font-size="17" fill="#212121">wait for response2</text>
+</g>
+<g opacity="1"><rect x="1200" y="4816" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="1200" y="4816" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="1222" y="4838" font-size="17" fill="#212121">Check for approval</text>
+</g>
+<g opacity="1"><rect x="1568" y="4816" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="1568" y="4816" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="1590" y="4838" font-size="17" fill="#212121">Continue?4</text>
+</g>
+<g opacity="1"><rect x="2432" y="4800" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="2432" y="4800" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="2454" y="4822" font-size="17" fill="#212121">Get feedback4</text>
+</g>
+<g opacity="1"><rect x="-3456" y="3824" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-3456" y="3824" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-3434" y="3846" font-size="17" fill="#212121">Loop Over Images</text>
+</g>
+<g opacity="1"><rect x="112" y="4784" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="112" y="4784" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="134" y="4806" font-size="17" fill="#212121">Get image</text>
+</g>
+<g opacity="1"><rect x="464" y="4752" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="464" y="4752" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="486" y="4774" font-size="17" fill="#212121">If2</text>
+</g>
+<g opacity="1"><rect x="656" y="4816" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="656" y="4816" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="678" y="4838" font-size="17" fill="#212121">Edit Fields31</text>
+</g>
+<g opacity="1"><rect x="-6464" y="4304" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="-6464" y="4304" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="-6442" y="4326" font-size="17" fill="#212121">OpenAI Chat Model</text>
+</g>
+<g opacity="1"><rect x="-4432" y="3648" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-4432" y="3648" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-4410" y="3670" font-size="17" fill="#212121">Execute Command</text>
+</g>
+<g opacity="1"><rect x="-6320" y="4096" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-6320" y="4096" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-6298" y="4118" font-size="17" fill="#212121">GetExecutionOverviewBy</text>
+</g>
+<g opacity="1"><rect x="-6176" y="4096" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-6176" y="4096" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-6154" y="4118" font-size="17" fill="#212121">Get_All_Dirs</text>
+</g>
+<g opacity="1"><rect x="-6064" y="4096" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-6064" y="4096" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-6042" y="4118" font-size="17" fill="#212121">Cleanup</text>
+</g>
+<g opacity="1"><rect x="-5936" y="4096" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-5936" y="4096" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-5914" y="4118" font-size="17" fill="#212121">DeleteFolderById</text>
+</g>
+<g opacity="1"><rect x="-4768" y="3712" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-4768" y="3712" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-4746" y="3734" font-size="17" fill="#212121">Get director brief</text>
+</g>
+<g opacity="1"><rect x="-4608" y="3712" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4608" y="3712" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4586" y="3734" font-size="17" fill="#212121">If1</text>
+</g>
+<g opacity="1"><rect x="-4464" y="3808" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-4464" y="3808" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-4442" y="3830" font-size="17" fill="#212121">Code in JavaScript</text>
+</g>
+<g opacity="1"><rect x="-4288" y="3808" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-4288" y="3808" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-4266" y="3830" font-size="17" fill="#212121">Execute Command1</text>
+</g>
+<g opacity="0.45"><rect x="-5952" y="3888" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="-5952" y="3888" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="-5930" y="3910" font-size="17" fill="#212121">Agent #0</text>
+</g>
+<g opacity="1"><rect x="-4432" y="3120" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4432" y="3120" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4410" y="3142" font-size="17" fill="#212121">Remaining images?</text>
+</g>
+<g opacity="1"><rect x="-3808" y="2768" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-3808" y="2768" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-3786" y="2790" font-size="17" fill="#212121">Remaining choices?</text>
+</g>
+<g opacity="1"><rect x="-4112" y="3440" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4112" y="3440" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4090" y="3462" font-size="17" fill="#212121">Merge</text>
+</g>
+<g opacity="1"><rect x="-3984" y="3616" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-3984" y="3616" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-3962" y="3638" font-size="17" fill="#212121">Split Out</text>
+</g>
+<g opacity="1"><rect x="-3376" y="2880" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-3376" y="2880" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-3354" y="2902" font-size="17" fill="#212121">Merge1</text>
+</g>
+<g opacity="1"><rect x="-3200" y="2880" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-3200" y="2880" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-3178" y="2902" font-size="17" fill="#212121">Split Out2</text>
+</g>
+<g opacity="0.45"><rect x="-6048" y="4336" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="-6048" y="4336" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="-6026" y="4358" font-size="17" fill="#212121">Cohere Chat Model</text>
+</g>
+<g opacity="1"><rect x="-4896" y="4016" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4896" y="4016" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4874" y="4038" font-size="17" fill="#212121">Edit Fields29</text>
+</g>
+<g opacity="1"><rect x="-4736" y="4016" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-4736" y="4016" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-4714" y="4038" font-size="17" fill="#212121">Get director</text>
+<text x="-4714" y="4057" font-size="17" fill="#212121">brief1</text>
+</g>
+<g opacity="1"><rect x="-4240" y="3648" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="-4240" y="3648" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="-4218" y="3670" font-size="17" fill="#212121">Send confirmation</text>
+</g>
+<g opacity="1"><rect x="-4096" y="3808" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="-4096" y="3808" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="-4074" y="3830" font-size="17" fill="#212121">Send confirmation1</text>
+</g>
+<g opacity="1"><rect x="-4272" y="3248" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="-4272" y="3248" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="-4250" y="3270" font-size="17" fill="#212121">Send confirmation2</text>
+</g>
+<g opacity="0.45"><rect x="-352" y="4512" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="-352" y="4512" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="-330" y="4534" font-size="17" fill="#212121">Generate image -</text>
+<text x="-330" y="4553" font-size="17" fill="#212121">nano banana pro</text>
+</g>
+<g opacity="1"><rect x="-4576" y="4016" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4576" y="4016" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4554" y="4038" font-size="17" fill="#212121">Edit Fields1</text>
+</g>
+<g opacity="1"><rect x="-4416" y="4016" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4416" y="4016" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4394" y="4038" font-size="17" fill="#212121">Edit Fields2</text>
+</g>
+<g opacity="1"><rect x="-352" y="4752" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="-352" y="4752" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="-330" y="4774" font-size="17" fill="#212121">Generate image -</text>
+<text x="-330" y="4793" font-size="17" fill="#212121">nano banana pro1</text>
+</g>
+<g opacity="1"><rect x="-1552" y="4368" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1552" y="4368" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1530" y="4390" font-size="17" fill="#212121">Has references?</text>
+</g>
+<g opacity="1"><rect x="-1360" y="4224" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1360" y="4224" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1338" y="4246" font-size="17" fill="#212121">Edit Fields3</text>
+</g>
+<g opacity="1"><rect x="-1184" y="4224" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1184" y="4224" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1162" y="4246" font-size="17" fill="#212121">Split Out4</text>
+</g>
+<g opacity="1"><rect x="-1008" y="4208" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1008" y="4208" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-986" y="4230" font-size="17" fill="#212121">Loop Over Items1</text>
+</g>
+<g opacity="1"><rect x="-848" y="4304" width="150" height="64" rx="12" fill="white" stroke="#2e7d32" stroke-width="5"/>
+<rect x="-848" y="4304" width="14" height="64" rx="6" fill="#2e7d32"/>
+<text x="-826" y="4326" font-size="17" fill="#212121">Get object data or</text>
+<text x="-826" y="4345" font-size="17" fill="#212121">metadata</text>
+</g>
+<g opacity="1"><rect x="-736" y="4224" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-736" y="4224" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-714" y="4246" font-size="17" fill="#212121">Edit Fields4</text>
+</g>
+<g opacity="1"><rect x="-1296" y="3840" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1296" y="3840" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1274" y="3862" font-size="17" fill="#212121">Edit Fields5</text>
+</g>
+<g opacity="1"><rect x="-1120" y="3840" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1120" y="3840" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1098" y="3862" font-size="17" fill="#212121">Split Out5</text>
+</g>
+<g opacity="1"><rect x="-944" y="3824" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-944" y="3824" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-922" y="3846" font-size="17" fill="#212121">Loop Over Items2</text>
+</g>
+<g opacity="1"><rect x="-784" y="3904" width="150" height="64" rx="12" fill="white" stroke="#2e7d32" stroke-width="5"/>
+<rect x="-784" y="3904" width="14" height="64" rx="6" fill="#2e7d32"/>
+<text x="-762" y="3926" font-size="17" fill="#212121">Get object data or</text>
+<text x="-762" y="3945" font-size="17" fill="#212121">metadata1</text>
+</g>
+<g opacity="1"><rect x="-624" y="3840" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-624" y="3840" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-602" y="3862" font-size="17" fill="#212121">Edit Fields6</text>
+</g>
+<g opacity="1"><rect x="-448" y="3904" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="-448" y="3904" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="-426" y="3926" font-size="17" fill="#212121">Generate image -</text>
+<text x="-426" y="3945" font-size="17" fill="#212121">nano banana2</text>
+</g>
+<g opacity="1"><rect x="-448" y="4096" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="-448" y="4096" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="-426" y="4118" font-size="17" fill="#212121">Generate image -</text>
+<text x="-426" y="4137" font-size="17" fill="#212121">nano banana</text>
+</g>
+<g opacity="1"><rect x="-1424" y="4032" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1424" y="4032" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1402" y="4054" font-size="17" fill="#212121">Has references?1</text>
+</g>
+<g opacity="1"><rect x="-1296" y="3424" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1296" y="3424" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1274" y="3446" font-size="17" fill="#212121">Edit Fields8</text>
+</g>
+<g opacity="1"><rect x="-1120" y="3424" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1120" y="3424" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1098" y="3446" font-size="17" fill="#212121">Split Out6</text>
+</g>
+<g opacity="1"><rect x="-944" y="3408" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-944" y="3408" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-922" y="3430" font-size="17" fill="#212121">Loop Over Items3</text>
+</g>
+<g opacity="1"><rect x="-784" y="3488" width="150" height="64" rx="12" fill="white" stroke="#2e7d32" stroke-width="5"/>
+<rect x="-784" y="3488" width="14" height="64" rx="6" fill="#2e7d32"/>
+<text x="-762" y="3510" font-size="17" fill="#212121">Get object data or</text>
+<text x="-762" y="3529" font-size="17" fill="#212121">metadata2</text>
+</g>
+<g opacity="1"><rect x="-624" y="3424" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-624" y="3424" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-602" y="3446" font-size="17" fill="#212121">Edit Fields9</text>
+</g>
+<g opacity="1"><rect x="-1424" y="3616" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1424" y="3616" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1402" y="3638" font-size="17" fill="#212121">Has references?2</text>
+</g>
+<g opacity="1"><rect x="-464" y="3424" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="-464" y="3424" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="-442" y="3446" font-size="17" fill="#212121">Generate image -</text>
+<text x="-442" y="3465" font-size="17" fill="#212121">gpt4o2</text>
+</g>
+<g opacity="1"><rect x="-464" y="3648" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="-464" y="3648" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="-442" y="3670" font-size="17" fill="#212121">Generate image -</text>
+<text x="-442" y="3689" font-size="17" fill="#212121">gpt4o3</text>
+</g>
+<g opacity="1"><rect x="0" y="4528" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="0" y="4528" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="22" y="4550" font-size="17" fill="#212121">Wait</text>
+</g>
+<g opacity="1"><rect x="208" y="4528" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="208" y="4528" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="230" y="4550" font-size="17" fill="#212121">Get image1</text>
+</g>
+<g opacity="1"><rect x="416" y="4496" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="416" y="4496" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="438" y="4518" font-size="17" fill="#212121">If3</text>
+</g>
+<g opacity="1"><rect x="1008" y="4816" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="1008" y="4816" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="1030" y="4838" font-size="17" fill="#212121">Send a photo</text>
+<text x="1030" y="4857" font-size="17" fill="#212121">message</text>
+</g>
+<g opacity="1"><rect x="832" y="4816" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="832" y="4816" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="854" y="4838" font-size="17" fill="#212121">HTTP Request</text>
+</g>
+<g opacity="1"><rect x="1840" y="4800" width="150" height="64" rx="12" fill="white" stroke="#2e7d32" stroke-width="5"/>
+<rect x="1840" y="4800" width="14" height="64" rx="6" fill="#2e7d32"/>
+<text x="1862" y="4822" font-size="17" fill="#212121">Delete an object</text>
+<text x="1862" y="4841" font-size="17" fill="#212121">from a bucket</text>
+</g>
+<g opacity="1"><rect x="1008" y="4592" width="150" height="64" rx="12" fill="white" stroke="#2e7d32" stroke-width="5"/>
+<rect x="1008" y="4592" width="14" height="64" rx="6" fill="#2e7d32"/>
+<text x="1030" y="4614" font-size="17" fill="#212121">Create an object</text>
+</g>
+<g opacity="1"><rect x="-6272" y="4304" width="150" height="64" rx="12" fill="white" stroke="#c2185b" stroke-width="5"/>
+<rect x="-6272" y="4304" width="14" height="64" rx="6" fill="#c2185b"/>
+<text x="-6250" y="4326" font-size="17" fill="#212121">Call 'Creative</text>
+<text x="-6250" y="4345" font-size="17" fill="#212121">Sub-Agent'</text>
+</g>
+<g opacity="1"><rect x="-6800" y="3808" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-6800" y="3808" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-6778" y="3830" font-size="17" fill="#212121">Is voice msg?</text>
+</g>
+<g opacity="1"><rect x="-6544" y="3696" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="-6544" y="3696" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="-6522" y="3718" font-size="17" fill="#212121">Get a file</text>
+</g>
+<g opacity="1"><rect x="-6272" y="3504" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="-6272" y="3504" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="-6250" y="3526" font-size="17" fill="#212121">Transcribe a</text>
+<text x="-6250" y="3545" font-size="17" fill="#212121">recording</text>
+</g>
+<g opacity="1"><rect x="-6160" y="3696" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-6160" y="3696" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-6138" y="3718" font-size="17" fill="#212121">Edit Fields32</text>
+</g>
+<g opacity="1"><rect x="-1312" y="2992" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1312" y="2992" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1290" y="3014" font-size="17" fill="#212121">Edit Fields11</text>
+</g>
+<g opacity="1"><rect x="-1136" y="2992" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1136" y="2992" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1114" y="3014" font-size="17" fill="#212121">Split Out7</text>
+</g>
+<g opacity="1"><rect x="-960" y="2976" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-960" y="2976" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-938" y="2998" font-size="17" fill="#212121">Loop Over Items4</text>
+</g>
+<g opacity="1"><rect x="-800" y="3056" width="150" height="64" rx="12" fill="white" stroke="#2e7d32" stroke-width="5"/>
+<rect x="-800" y="3056" width="14" height="64" rx="6" fill="#2e7d32"/>
+<text x="-778" y="3078" font-size="17" fill="#212121">Get object data or</text>
+<text x="-778" y="3097" font-size="17" fill="#212121">metadata3</text>
+</g>
+<g opacity="1"><rect x="-640" y="2992" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-640" y="2992" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-618" y="3014" font-size="17" fill="#212121">Edit Fields12</text>
+</g>
+<g opacity="1"><rect x="-1440" y="3184" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1440" y="3184" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1418" y="3206" font-size="17" fill="#212121">Has references?3</text>
+</g>
+<g opacity="1"><rect x="-480" y="2992" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="-480" y="2992" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="-458" y="3014" font-size="17" fill="#212121">Generate image -</text>
+<text x="-458" y="3033" font-size="17" fill="#212121">gpt-image-2</text>
+</g>
+<g opacity="1"><rect x="-480" y="3216" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="-480" y="3216" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="-458" y="3238" font-size="17" fill="#212121">Generate image -</text>
+<text x="-458" y="3257" font-size="17" fill="#212121">gpt-image-</text>
+</g>
+<g opacity="1"><rect x="-6336" y="3696" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="-6336" y="3696" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="-6314" y="3718" font-size="17" fill="#212121">Transcribe a</text>
+<text x="-6314" y="3737" font-size="17" fill="#212121">recording1</text>
+</g>
+<g opacity="0.45"><rect x="272" y="3520" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="272" y="3520" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="294" y="3542" font-size="17" fill="#212121">Simple Memory</text>
+</g>
+<g opacity="1"><rect x="80" y="3536" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="80" y="3536" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="102" y="3558" font-size="17" fill="#212121">OpenAI Chat Model2</text>
+</g>
+<g opacity="1"><rect x="96" y="3280" width="150" height="64" rx="12" fill="white" stroke="#7c4dff" stroke-width="5"/>
+<rect x="96" y="3280" width="14" height="64" rx="6" fill="#7c4dff"/>
+<text x="118" y="3302" font-size="17" fill="#212121">Video Prompt</text>
+<text x="118" y="3321" font-size="17" fill="#212121">generator</text>
+</g>
+<g opacity="0.45"><rect x="1360" y="4816" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="1360" y="4816" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="1382" y="4838" font-size="17" fill="#212121">Check for</text>
+<text x="1382" y="4857" font-size="17" fill="#212121">approval1</text>
+</g>
+<g opacity="1"><rect x="-1712" y="4000" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-1712" y="4000" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-1690" y="4022" font-size="17" fill="#212121">Switch</text>
+</g>
+<g opacity="0.45"><rect x="-4048" y="4016" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4048" y="4016" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4026" y="4038" font-size="17" fill="#212121">Edit Fields10</text>
+</g>
+<g opacity="1"><rect x="-5584" y="3888" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-5584" y="3888" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-5562" y="3910" font-size="17" fill="#212121">Set output</text>
+</g>
+<g opacity="1"><rect x="-2608" y="3840" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-2608" y="3840" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-2586" y="3862" font-size="17" fill="#212121">Edit Fields33</text>
+</g>
+<g opacity="1"><rect x="544" y="5680" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="544" y="5680" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="566" y="5702" font-size="17" fill="#212121">Edit Fields37</text>
+</g>
+<g opacity="1"><rect x="720" y="5680" width="150" height="64" rx="12" fill="white" stroke="#ff9800" stroke-width="5"/>
+<rect x="720" y="5680" width="14" height="64" rx="6" fill="#ff9800"/>
+<text x="742" y="5702" font-size="17" fill="#212121">HTTP Request1</text>
+</g>
+<g opacity="1"><rect x="880" y="5680" width="150" height="64" rx="12" fill="white" stroke="#2e7d32" stroke-width="5"/>
+<rect x="880" y="5680" width="14" height="64" rx="6" fill="#2e7d32"/>
+<text x="902" y="5702" font-size="17" fill="#212121">Create an object1</text>
+</g>
+<g opacity="1"><rect x="-4896" y="3424" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-4896" y="3424" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-4874" y="3446" font-size="17" fill="#212121">Execute Command2</text>
+</g>
+<g opacity="1"><rect x="2048" y="4800" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="2048" y="4800" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="2070" y="4822" font-size="17" fill="#212121">Execute Command3</text>
+</g>
+<g opacity="1"><rect x="2112" y="5008" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="2112" y="5008" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="2134" y="5030" font-size="17" fill="#212121">Save prompt &amp;</text>
+<text x="2134" y="5049" font-size="17" fill="#212121">"image"(only name)</text>
+<text x="2134" y="5068" font-size="17" fill="#212121">to disk</text>
+</g>
+<g opacity="1"><rect x="-4256" y="4016" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-4256" y="4016" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-4234" y="4038" font-size="17" fill="#212121">Split Out1</text>
+</g>
+<g opacity="1"><rect x="704" y="4592" width="150" height="64" rx="12" fill="white" stroke="#2e7d32" stroke-width="5"/>
+<rect x="704" y="4592" width="14" height="64" rx="6" fill="#2e7d32"/>
+<text x="726" y="4614" font-size="17" fill="#212121">smart filename</text>
+<text x="726" y="4633" font-size="17" fill="#212121">extension based on</text>
+<text x="726" y="4652" font-size="17" fill="#212121">$binary</text>
+</g>
+<g opacity="1"><rect x="288" y="4784" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="288" y="4784" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="310" y="4806" font-size="17" fill="#212121">Error?</text>
+</g>
+<g opacity="1"><rect x="-2384" y="3840" width="150" height="64" rx="12" fill="white" stroke="#c2185b" stroke-width="5"/>
+<rect x="-2384" y="3840" width="14" height="64" rx="6" fill="#c2185b"/>
+<text x="-2362" y="3862" font-size="17" fill="#212121">Call 'Creative</text>
+<text x="-2362" y="3881" font-size="17" fill="#212121">Sub-Agent'1</text>
+</g>
+<g opacity="1"><rect x="-2176" y="3840" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-2176" y="3840" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-2154" y="3862" font-size="17" fill="#212121">Edit Fields</text>
+</g>
+<g opacity="1"><rect x="-576" y="4320" width="150" height="64" rx="12" fill="white" stroke="#455a64" stroke-width="5"/>
+<rect x="-576" y="4320" width="14" height="64" rx="6" fill="#455a64"/>
+<text x="-554" y="4342" font-size="17" fill="#212121">Code in</text>
+<text x="-554" y="4361" font-size="17" fill="#212121">JavaScript1</text>
+</g>
+<g opacity="1"><rect x="224" y="5024" width="150" height="64" rx="12" fill="white" stroke="#29a9eb" stroke-width="5"/>
+<rect x="224" y="5024" width="14" height="64" rx="6" fill="#29a9eb"/>
+<text x="246" y="5046" font-size="17" fill="#212121">Check for</text>
+<text x="246" y="5065" font-size="17" fill="#212121">approval2</text>
+</g>
+<g opacity="1"><rect x="-2096" y="4384" width="150" height="64" rx="12" fill="white" stroke="#2e7d32" stroke-width="5"/>
+<rect x="-2096" y="4384" width="14" height="64" rx="6" fill="#2e7d32"/>
+<text x="-2074" y="4406" font-size="17" fill="#212121">Insert row</text>
+</g>
+<g opacity="1"><rect x="-2960" y="3840" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-2960" y="3840" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-2938" y="3862" font-size="17" fill="#212121">Edit Fields13</text>
+</g>
+<g opacity="1"><rect x="-2784" y="3840" width="150" height="64" rx="12" fill="white" stroke="#2e7d32" stroke-width="5"/>
+<rect x="-2784" y="3840" width="14" height="64" rx="6" fill="#2e7d32"/>
+<text x="-2762" y="3862" font-size="17" fill="#212121">Get row(s)</text>
+</g>
+<g opacity="1"><rect x="-3200" y="3872" width="150" height="64" rx="12" fill="white" stroke="#9e9e9e" stroke-width="5"/>
+<rect x="-3200" y="3872" width="14" height="64" rx="6" fill="#9e9e9e"/>
+<text x="-3178" y="3894" font-size="17" fill="#212121">If4</text>
+</g>
+<rect x="-7120" y="5924" width="40" height="40" rx="8" fill="#ff6d5a"/>
+<text x="-7065" y="5954" font-size="30" fill="#424242">Trigger</text>
+<rect x="-6220" y="5924" width="40" height="40" rx="8" fill="#7c4dff"/>
+<text x="-6165" y="5954" font-size="30" fill="#424242">AI agent / model</text>
+<rect x="-5320" y="5924" width="40" height="40" rx="8" fill="#29a9eb"/>
+<text x="-5265" y="5954" font-size="30" fill="#424242">Telegram (user in the loop)</text>
+<rect x="-4420" y="5924" width="40" height="40" rx="8" fill="#ff9800"/>
+<text x="-4365" y="5954" font-size="30" fill="#424242">HTTP / external API</text>
+<rect x="-3520" y="5924" width="40" height="40" rx="8" fill="#455a64"/>
+<text x="-3465" y="5954" font-size="30" fill="#424242">Shell / ffmpeg</text>
+<rect x="-2620" y="5924" width="40" height="40" rx="8" fill="#2e7d32"/>
+<text x="-2565" y="5954" font-size="30" fill="#424242">Storage / data</text>
+<rect x="-1720" y="5924" width="40" height="40" rx="8" fill="#c2185b"/>
+<text x="-1665" y="5954" font-size="30" fill="#424242">Sub-workflow</text>
+<rect x="-820" y="5924" width="40" height="40" rx="8" fill="#9e9e9e"/>
+<text x="-765" y="5954" font-size="30" fill="#424242">Flow control</text>
+<text x="-7120" y="6024" font-size="26" fill="#757575">Dashed lines: AI connections (model, memory, tools). Faded boxes: disabled nodes.</text>
+</svg>

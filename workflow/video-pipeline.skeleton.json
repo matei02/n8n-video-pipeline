@@ -1,0 +1,4258 @@
+{
+  "name": "AI video generation pipeline (structure only)",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "63cbb248-f3aa-54c8-89f9-9722de79aa7c",
+      "name": "Send message and wait for response1",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        5248,
+        4272
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "0ed17b79-e50a-5695-b81b-4fb5c7de146d",
+      "name": "Edit Fields15",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        5472,
+        4288
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "be881046-3a6c-5c35-9ccf-9a085682a27a",
+      "name": "Simple Memory4",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        864,
+        3712
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "e577115d-d5cb-54f5-a695-aa4c51cf74bb",
+      "name": "Edit Fields16",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        176,
+        2736
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "958b5cfb-a57c-5579-bdd1-5af9620c9491",
+      "name": "Edit Fields17",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4640,
+        3120
+      ],
+      "alwaysOutputData": true,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "67312858-b1ac-5fc3-b81a-d158219d74cb",
+      "name": "Edit Fields18",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4800,
+        3120
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "a870ef2f-745f-523d-9927-d5e1a9c3bce3",
+      "name": "Edit Fields7",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -5088,
+        3712
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {},
+      "id": "30a84dd3-d6a6-5871-ab13-8f0b8733ccd8",
+      "name": "Execute Command4",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -4992,
+        3120
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "065977d4-2a98-55ec-b78c-3d67ebf86009",
+      "name": "Edit Fields19",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -6544,
+        3888
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "9b6db03b-d5e4-5fb0-969e-10bbbecf9c21",
+      "name": "Send Final video5",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        3472,
+        3504
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {},
+      "id": "5659379a-8324-5f5c-9890-729b93770282",
+      "name": "Send idea and wait6",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        3568,
+        2784
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "29e0090f-3055-5087-bc62-50cbd3b64a0a",
+      "name": "Execute Command9",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        5024,
+        4272
+      ],
+      "disabled": true,
+      "retryOnFail": false,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {},
+      "id": "146b1d6e-03f4-57ab-95e4-bc016ec66d7a",
+      "name": "Wait1",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        3904,
+        4272
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "67c3f125-472c-5ec8-839c-1cf9106bd950",
+      "name": "Switch3",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        3232,
+        3584
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "9ad8cc86-f538-53b1-8896-45b3420a7cd6",
+      "name": "Switch4",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        2768,
+        3664
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "72e01751-3cc9-57d4-9a1b-e24817f03240",
+      "name": "Send Final video6",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        3472,
+        3328
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {},
+      "id": "e1b68de3-34dc-5bd9-859e-40a55fdd0bcd",
+      "name": "Get scene 2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2592,
+        3696
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "76e16af7-35d0-51f0-b046-2707945cff1d",
+      "name": "Generate scene ",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1056,
+        4000
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "25c44e94-3955-5bd1-9539-de0ec4bd0207",
+      "name": "Merge4",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        2192,
+        2944
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "b2656491-9841-5d1b-937e-8ec8e4a9aa23",
+      "name": "Continue?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1760,
+        3120
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "a7ff6db7-2d5a-5513-b2e4-6ff6e6b8c06d",
+      "name": "Get feedback2",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        2192,
+        3168
+      ],
+      "alwaysOutputData": false,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "cad11777-0188-5d48-a3da-7fdcaf40c303",
+      "name": "Upload a video1",
+      "type": "n8n-nodes-base.youTube",
+      "typeVersion": 1,
+      "position": [
+        2464,
+        2944
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {},
+      "id": "59d01f42-7fd4-5703-9851-8479e95597fb",
+      "name": "Edit Fields20",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        80,
+        3728
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "a8505ba8-012e-57fe-b39a-ef4a96d9fcb3",
+      "name": "Aggregate1",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        -96,
+        3728
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "2a1484c3-0912-5bd7-9836-32749ab38fc5",
+      "name": "Send idea and wait7",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -4816,
+        4608
+      ],
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {},
+      "id": "0d9cd857-318d-5e3e-a1c3-7a53492967dc",
+      "name": "Send idea and wait8",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -4416,
+        4352
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": true,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "7e843191-42fb-5f9d-a0ce-f1c636efb85f",
+      "name": "If",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -4960,
+        4464
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "0a6b990b-cf8d-5cdb-b3f6-e82b799024e4",
+      "name": "Edit Fields21",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4800,
+        4352
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f2943a63-03b9-51ac-9b53-557d97c42aae",
+      "name": "Send idea and wait9",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -4608,
+        4352
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": true,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "5483f89b-0130-5425-8e4d-29ce83df8785",
+      "name": "Switch5",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        -5376,
+        3856
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "d6706061-3ccd-5b38-be60-79147aa57e50",
+      "name": "Embeddings OpenAI3",
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -5808,
+        4256
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "d2f36d70-7c2a-5e06-8075-df4b46f81a74",
+      "name": "Postgres PGVector Store3",
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePGVector",
+      "typeVersion": 1.3,
+      "position": [
+        -5808,
+        4096
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "0b03b577-0f18-5318-8f67-4580d05a5896",
+      "name": "Edit Fields22",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -5184,
+        3120
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "0aaa4eba-a4f4-584d-b062-5bd9272539b9",
+      "name": "Telegram Trigger",
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -7040,
+        3808
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "e4b50f1e-6fb9-5a61-8614-9ef9b156d284",
+      "name": "Simple Memory5",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        -5392,
+        4096
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "5ce81052-e97b-5c1a-bf10-fe99d59a104f",
+      "name": "Default Data Loader1",
+      "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+      "typeVersion": 1.1,
+      "position": [
+        3200,
+        3008
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "5e061923-5be0-5a1d-b1ef-7a336df726c5",
+      "name": "Embeddings OpenAI5",
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        3008,
+        2992
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "551dcd7f-3bc1-5e6c-aaca-beac0d6d7225",
+      "name": "Postgres PGVector Store5",
+      "type": "@n8n/n8n-nodes-langchain.vectorStorePGVector",
+      "typeVersion": 1.3,
+      "position": [
+        3056,
+        2784
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "96ff9100-3799-5cc2-a55d-936d9714c598",
+      "name": "Wait 3 min1",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        2400,
+        3696
+      ],
+      "alwaysOutputData": false,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "7e105684-da6b-5f02-899a-d7be72e9c06b",
+      "name": "Send Final video7",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1776,
+        3696
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "01d9008e-8819-504b-ac67-ed8640cccc2b",
+      "name": "Pass?1",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1248,
+        3456
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "0ff77161-1b67-5ba6-9409-68ce58cf1d44",
+      "name": "Analyze video1",
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        2832,
+        2784
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "7df8bdd5-c2c2-543e-bf6e-6ef771f2e2d4",
+      "name": "Get feedback3",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1264,
+        3120
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "f5e4b0c5-cef1-5335-b815-48a917984ad0",
+      "name": "Send Final video1",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        768,
+        3120
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "6119aeaa-5a96-5cca-8a46-e4fbc14d7ca2",
+      "name": "Concatenate clips1",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        16,
+        2736
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "e4c74aab-fae2-5632-99b8-ffe3aaade4eb",
+      "name": "Edit Fields23",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        544,
+        3456
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {},
+      "id": "713b61ff-5b9b-5e5a-8a93-d327baecbe7a",
+      "name": "Edit Fields24",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1632,
+        3504
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "1929ec2e-e08c-5ca2-80ea-27d4552cde12",
+      "name": "Prompt Reviewer Agent1",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        704,
+        3456
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "5df7ed34-f0bc-517e-a9a0-503f35dfb077",
+      "name": "Self-Check1",
+      "type": "@n8n/n8n-nodes-langchain.toolThink",
+      "typeVersion": 1.1,
+      "position": [
+        304,
+        4016
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "6062fa28-e284-541a-aa38-273f8aa4f387",
+      "name": "Message a model1",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        288,
+        3728
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "673c4d06-ab8a-57b2-90dc-d7c62577cf11",
+      "name": "Edit Fields25",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        3680,
+        4272
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "cccf56f9-9cfd-54a2-b62c-fa533953ff02",
+      "name": "Send video and wait1",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        4576,
+        4272
+      ],
+      "alwaysOutputData": false,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "31c574fd-bef1-53a9-b3bf-20761fd0a397",
+      "name": "Continue?3",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        4800,
+        4272
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "2e5e3020-65cd-5e3a-9bcd-35569d34defd",
+      "name": "Set error1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        3648,
+        3680
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "5fa446e9-41ca-569f-a5a9-6fae1d0f9b1d",
+      "name": "Send a video1",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        4352,
+        4272
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "e576df8c-e047-5aba-b8ff-6a7a058acdc1",
+      "name": "Simple Memory6",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        432,
+        4016
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "58796345-a5b9-500c-86bb-ce1af1962532",
+      "name": "Batch of ",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -272,
+        3712
+      ],
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {},
+      "id": "fc376f6b-03ab-583c-8baa-b4d9426ea9fa",
+      "name": "Send idea and wait10",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -6528,
+        3344
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {},
+      "id": "20c3d3d1-f646-51d6-944f-9f5b528011cf",
+      "name": "Send invitation1",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -6752,
+        3344
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "68897fa3-9050-5dee-b4a0-c9055da13d4f",
+      "name": "Sticky Note4",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -6976,
+        3264
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "8b05cea1-b7f0-52fa-a8a2-2996048772f1",
+      "name": "Read/Write Files from Disk3",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        4112,
+        4272
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "162a9e5f-ea21-54b1-9a73-333c82321009",
+      "name": "Read/Write Files from Disk4",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        352,
+        2736
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "29ab6a01-25f5-590c-821e-376b487c588d",
+      "name": "Edit Fields27",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1056,
+        3456
+      ],
+      "disabled": true
+    },
+    {
+      "parameters": {},
+      "id": "37d77996-a167-54e2-bdda-12dbde31e3cf",
+      "name": "HTTP request tool (name withheld)",
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.3,
+      "position": [
+        -6688,
+        4096
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "3cc53bb5-c1eb-5eb4-bcd0-9ce432be3e8b",
+      "name": "Execute Command12",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        3424,
+        3952
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "318f75b6-f10d-5198-8125-36c470681000",
+      "name": "Send Final video8",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1424,
+        3488
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "8baa8512-16c7-52c7-bb4d-af4df5e7132c",
+      "name": "Send provider error message",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        3472,
+        3680
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {},
+      "id": "3bd9d056-9a49-5fd5-9b6d-46c010479ed2",
+      "name": "Switch6",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        1264,
+        3984
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "b1b4a32c-5310-549f-be58-5079dbc56e1c",
+      "name": "Send Final video10",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1792,
+        4112
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "dddbe0e8-d5c4-569f-8786-702d7e8fbe87",
+      "name": "Send top-up message",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1776,
+        3920
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "856eb165-0f04-52d7-8108-53a3267fca06",
+      "name": "Edit Fields28",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4928,
+        3712
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "3fecd596-a147-5046-869d-907bc2485dd3",
+      "name": "Eroare ytb connection",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        2624,
+        3168
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "686034e2-c6e3-5595-9a11-8900fba187fa",
+      "name": "Merge5",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        2624,
+        2784
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "b1fcb40f-a6a3-5fa6-b81e-bc5098be3e14",
+      "name": "Aspect Ratio?",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        2992,
+        3952
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "ac9d6461-d0ac-5274-8fe0-195f98c49a6a",
+      "name": "Execute Command14",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        3424,
+        4128
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "1c6bbf5f-46ed-5fd6-a312-98821ea6ce38",
+      "name": "Execute Command5",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        3200,
+        4128
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "3ca401a2-b61e-50ae-b55d-350d8e980ae0",
+      "name": "Improve prompt",
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        1408,
+        3312
+      ],
+      "disabled": true
+    },
+    {
+      "parameters": {},
+      "id": "1b59b234-bfd2-5102-b7f4-7addba490b08",
+      "name": "Edit Fields26",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1728,
+        3312
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "18cf8566-d5b1-5b99-ac30-0d9570e288cf",
+      "name": "GetExecutionContents",
+      "type": "n8n-nodes-base.executeCommandTool",
+      "typeVersion": 1,
+      "position": [
+        -6480,
+        4096
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "3d3ee1a7-2684-53b0-b943-7766482aaa6a",
+      "name": "Send idea and wait11",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -4224,
+        4352
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": true,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "7274e092-5cc2-5cc4-ad4f-6d24e4b948a2",
+      "name": "Wait2",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -96,
+        4784
+      ],
+      "disabled": true
+    },
+    {
+      "parameters": {},
+      "id": "0d42da87-acc9-5247-8929-1e4616e4c892",
+      "name": "Send message and wait for response2",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        2224,
+        4800
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "c1d9d6bb-8bc5-58f7-a202-8e2264435fa1",
+      "name": "Check for approval",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1200,
+        4816
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "executeOnce": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {},
+      "id": "3183660d-dd02-506c-8ae0-33f0e19b9d5f",
+      "name": "Continue?4",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1568,
+        4816
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "b07d50ef-db75-5cc1-b0d8-b3f3bf3938c7",
+      "name": "Get feedback4",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2432,
+        4800
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f5327042-c4fc-57ab-bf99-0b09afddad92",
+      "name": "Loop Over Images",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -3456,
+        3824
+      ],
+      "executeOnce": false
+    },
+    {
+      "parameters": {},
+      "id": "3f74c2b2-c08b-575a-b7aa-c03ae547caff",
+      "name": "Get image",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        112,
+        4784
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "a315dc91-03a8-58fe-9e63-45a6af1ff090",
+      "name": "If2",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        464,
+        4752
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "59e03bce-8187-536d-b508-7f8fea8576bf",
+      "name": "Edit Fields31",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        656,
+        4816
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "089cfe6f-87cb-5d48-87bf-5b09170b7a9a",
+      "name": "OpenAI Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        -6464,
+        4304
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "4a692f65-0788-5dfc-b144-89a38374659f",
+      "name": "Execute Command",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -4432,
+        3648
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "4cd04ddd-76be-54b2-aa9f-7a430bcc5fec",
+      "name": "GetExecutionOverviewById",
+      "type": "n8n-nodes-base.executeCommandTool",
+      "typeVersion": 1,
+      "position": [
+        -6320,
+        4096
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "cfe71337-6076-5bcd-829b-8aabd6a4bd1e",
+      "name": "Get_All_Dirs",
+      "type": "n8n-nodes-base.executeCommandTool",
+      "typeVersion": 1,
+      "position": [
+        -6176,
+        4096
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "e437f1c9-24a2-55b9-bca3-e991eb7bac37",
+      "name": "Cleanup",
+      "type": "n8n-nodes-base.executeCommandTool",
+      "typeVersion": 1,
+      "position": [
+        -6064,
+        4096
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "6bf282f6-2047-54cf-a1ab-2a0ba9c21dbf",
+      "name": "DeleteFolderById",
+      "type": "n8n-nodes-base.executeCommandTool",
+      "typeVersion": 1,
+      "position": [
+        -5936,
+        4096
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "ece8a51b-bd11-5975-9cf7-fdf4d9b5f90d",
+      "name": "Get director brief",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -4768,
+        3712
+      ],
+      "alwaysOutputData": true,
+      "executeOnce": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {},
+      "id": "2accf75f-28c0-5d1c-9999-d59941d375d6",
+      "name": "If1",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -4608,
+        3712
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "79e71125-5435-51b5-9cc1-e2eca6fbd084",
+      "name": "Code in JavaScript",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -4464,
+        3808
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "e2e9e2b0-2eef-5682-a9d4-47f81d3dc8b4",
+      "name": "Execute Command1",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -4288,
+        3808
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "cdeaa4f2-f4a1-5601-8c84-1c7298d2c5ea",
+      "name": "Agent #0",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -5952,
+        3888
+      ],
+      "disabled": true,
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {},
+      "id": "fd644911-8628-5c1e-ac5b-88afb96eb4ca",
+      "name": "Remaining images?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -4432,
+        3120
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "63622fb6-76a7-5655-94f2-2671712fe308",
+      "name": "Remaining choices?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -3808,
+        2768
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "faa948b9-8baf-5fc5-9580-08305e0563c5",
+      "name": "Merge",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -4112,
+        3440
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "122d847f-315d-5391-ae3b-88ccdbf527d8",
+      "name": "Split Out",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -3984,
+        3616
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "99679088-9cf2-5acc-953a-f031a26c281e",
+      "name": "Merge1",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -3376,
+        2880
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "d07fe961-21e8-5f5e-8ad2-c56303f00b07",
+      "name": "Split Out2",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -3200,
+        2880
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "38bddf73-1e16-53af-8c7b-0702484fe786",
+      "name": "Cohere Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatCohere",
+      "typeVersion": 1,
+      "position": [
+        -6048,
+        4336
+      ],
+      "disabled": true,
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {},
+      "id": "924a6ba6-f5be-523b-bdf0-5c80721f39e7",
+      "name": "Edit Fields29",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4896,
+        4016
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "5efb9238-e80c-5fba-b7b7-7c207dcdf0e8",
+      "name": "Get director brief1",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -4736,
+        4016
+      ],
+      "alwaysOutputData": true,
+      "executeOnce": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {},
+      "id": "d82e23bc-db8c-5ddd-9c0f-45d9c00adc32",
+      "name": "Send confirmation",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -4240,
+        3648
+      ],
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {},
+      "id": "95797b8f-551e-5c0b-a555-9ae26e154a61",
+      "name": "Send confirmation1",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -4096,
+        3808
+      ],
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {},
+      "id": "859fd51e-1b95-5d8e-95e0-b957d373b119",
+      "name": "Send confirmation2",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -4272,
+        3248
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "executeOnce": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {},
+      "id": "e2421348-54c6-5a2f-b4e7-3a9fe36e5df5",
+      "name": "Generate image - nano banana pro",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -352,
+        4512
+      ],
+      "disabled": true,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "f4cb92c2-b05a-5f00-bd26-79222ae41130",
+      "name": "Edit Fields1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4576,
+        4016
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "ca9607d1-dd87-5dce-85a6-0cdfce198dba",
+      "name": "Edit Fields2",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4416,
+        4016
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "18ddc1ee-07cf-5bcc-9433-7a7bf8b60425",
+      "name": "Generate image - nano banana pro1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -352,
+        4752
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "0bb00332-83b1-52f0-ba25-2e33a76b62db",
+      "name": "Has references?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -1552,
+        4368
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "faae2d14-32de-5d4e-86b9-93888d2f7c51",
+      "name": "Edit Fields3",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1360,
+        4224
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "63a3004e-690d-5ed8-8e9c-0f8e36a349ec",
+      "name": "Split Out4",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -1184,
+        4224
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "3466adc4-f5f5-57e8-a77b-a776660bb346",
+      "name": "Loop Over Items1",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -1008,
+        4208
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "70987660-8985-556b-a4ab-009b12f8f371",
+      "name": "Get object data or metadata",
+      "type": "n8n-nodes-base.googleCloudStorage",
+      "typeVersion": 1,
+      "position": [
+        -848,
+        4304
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "3150dd4c-1001-573e-ba7a-4f3a2cb80f0e",
+      "name": "Edit Fields4",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -736,
+        4224
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "ce87bfa8-9ea9-581b-b840-40951e719e3f",
+      "name": "Edit Fields5",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1296,
+        3840
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "77a15c19-8f37-5799-95f0-58c03f069042",
+      "name": "Split Out5",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -1120,
+        3840
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "a5ef9faf-8046-5534-9f82-0350c8c68bf5",
+      "name": "Loop Over Items2",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -944,
+        3824
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "e91fee69-9339-5fb0-9a02-85650d2a50c8",
+      "name": "Get object data or metadata1",
+      "type": "n8n-nodes-base.googleCloudStorage",
+      "typeVersion": 1,
+      "position": [
+        -784,
+        3904
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "2ac34d1d-f890-50f9-8dd6-21afb6f0c63b",
+      "name": "Edit Fields6",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -624,
+        3840
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "da487251-725d-5a67-afd3-bceaad8a83f2",
+      "name": "Generate image - nano banana2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -448,
+        3904
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "4ea55734-4689-5d4f-89af-832b23496c53",
+      "name": "Generate image - nano banana",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -448,
+        4096
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "9343ab26-f8a3-5caf-9e2f-c0c5053434b0",
+      "name": "Has references?1",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -1424,
+        4032
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "650c4848-6667-5caf-9e86-c83bc88c9841",
+      "name": "Edit Fields8",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1296,
+        3424
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "b42c62ac-8904-5c44-802b-0f2931d78eb7",
+      "name": "Split Out6",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -1120,
+        3424
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "5b8c291c-689d-536f-b5ef-d85baf82f4da",
+      "name": "Loop Over Items3",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -944,
+        3408
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f17ee540-e774-549f-af2d-5f3d60ada94d",
+      "name": "Get object data or metadata2",
+      "type": "n8n-nodes-base.googleCloudStorage",
+      "typeVersion": 1,
+      "position": [
+        -784,
+        3488
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "c9d7a16d-5db4-53bc-b9a9-af6e521a14fe",
+      "name": "Edit Fields9",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -624,
+        3424
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "4f7d303e-fb22-50b3-8a20-d0523f7c716f",
+      "name": "Has references?2",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -1424,
+        3616
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "e9560b8f-0209-5d14-a814-a74d7ff06c62",
+      "name": "Generate image - gpt4o2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -464,
+        3424
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "c4d35eba-5c70-5889-a2d3-addbcdf68805",
+      "name": "Generate image - gpt4o3",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -464,
+        3648
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "bb802973-3c51-5566-bc6d-79fe62f62d70",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        4528
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "3dc28703-85d6-5843-8c27-f9411c61fe00",
+      "name": "Get image1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        208,
+        4528
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "d08be3af-7c6b-58d6-b67e-b356efe0e429",
+      "name": "If3",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        416,
+        4496
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "abbb3992-6da3-5d5f-9aa2-d67b9b9aba0f",
+      "name": "Send a photo message",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1008,
+        4816
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {},
+      "id": "54253e22-4b9b-5d17-b2a0-4268f88f35ff",
+      "name": "HTTP Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        832,
+        4816
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {},
+      "id": "e7a7c72a-7ac9-5fcc-a43c-293da76d0367",
+      "name": "Delete an object from a bucket",
+      "type": "n8n-nodes-base.googleCloudStorage",
+      "typeVersion": 1,
+      "position": [
+        1840,
+        4800
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "282c87a3-441e-59de-aa8a-dfec76c864bd",
+      "name": "Create an object",
+      "type": "n8n-nodes-base.googleCloudStorage",
+      "typeVersion": 1,
+      "position": [
+        1008,
+        4592
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "12cba47f-bc66-5c31-9b4b-dfd08b7b4e2d",
+      "name": "Call 'Creative Sub-Agent'",
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.2,
+      "position": [
+        -6272,
+        4304
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "73259cc8-524c-5ef4-bf35-742f4302cc0b",
+      "name": "Is voice msg?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -6800,
+        3808
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "b87da5ce-72d6-5fc1-8f2c-37f1a2df43bc",
+      "name": "Get a file",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -6544,
+        3696
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "980834fd-e6a8-5f7a-b9d1-996035846473",
+      "name": "Transcribe a recording",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        -6272,
+        3504
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "37b1e57b-9225-5a52-8660-7553fd7fb3d4",
+      "name": "Edit Fields32",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -6160,
+        3696
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "6d1b1850-4fdc-54ef-95c4-4d6aeb8df989",
+      "name": "Edit Fields11",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1312,
+        2992
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "2d0c6ed0-9420-5294-bb95-0eca15f896a5",
+      "name": "Split Out7",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -1136,
+        2992
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "2a00df23-c88c-51e1-a743-199bb8101167",
+      "name": "Loop Over Items4",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -960,
+        2976
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "812a3e8a-7fdb-5802-bc2c-9d80a4d6207c",
+      "name": "Get object data or metadata3",
+      "type": "n8n-nodes-base.googleCloudStorage",
+      "typeVersion": 1,
+      "position": [
+        -800,
+        3056
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "3f8fb2cb-19f6-5b4d-9fea-d8f98ed5b4a9",
+      "name": "Edit Fields12",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -640,
+        2992
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "4b3fed75-ae9d-506d-9750-1e35304b4035",
+      "name": "Has references?3",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -1440,
+        3184
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "d4c5bf63-bb20-5972-8197-62e82c9dcfe1",
+      "name": "Generate image - gpt-image-2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -480,
+        2992
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "e075d4b5-5f8f-5eb7-a588-9931dc41b050",
+      "name": "Generate image - gpt-image-",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -480,
+        3216
+      ],
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "f632e9f9-9494-526e-b8ff-00e60d69dbf0",
+      "name": "Transcribe a recording1",
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        -6336,
+        3696
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "e61cb9d3-3b64-5564-ac28-9218228a3ee2",
+      "name": "Simple Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        272,
+        3520
+      ],
+      "disabled": true
+    },
+    {
+      "parameters": {},
+      "id": "08951d42-ae62-5075-9d31-84b35770fe48",
+      "name": "OpenAI Chat Model2",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        80,
+        3536
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "40538fc4-7b2a-5150-b5d7-3a5c0d9205a0",
+      "name": "Video Prompt generator",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        96,
+        3280
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "b8ebd24c-5792-53df-a56b-3a6ae3a534ba",
+      "name": "Check for approval1",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1360,
+        4816
+      ],
+      "disabled": true,
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "executeOnce": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {},
+      "id": "268cc571-824e-54b1-ab75-6b62e5731db5",
+      "name": "Switch",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        -1712,
+        4000
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "82f79c1f-2982-5416-a4de-4f2212fe4896",
+      "name": "Edit Fields10",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4048,
+        4016
+      ],
+      "disabled": true
+    },
+    {
+      "parameters": {},
+      "id": "a180d66e-d532-545e-bb17-4d9e2815ea15",
+      "name": "Set output",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -5584,
+        3888
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {},
+      "id": "94763663-1bb3-56f1-a365-258c9968233b",
+      "name": "Edit Fields33",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2608,
+        3840
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "9664cee1-8884-56a0-ba34-48c6851a0cfd",
+      "name": "Edit Fields37",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        544,
+        5680
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "4abfcecc-1d91-54c3-aa52-79a54340bbcc",
+      "name": "HTTP Request1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        720,
+        5680
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {},
+      "id": "98103bcc-f7c8-5b50-a12c-53c172ce322b",
+      "name": "Create an object1",
+      "type": "n8n-nodes-base.googleCloudStorage",
+      "typeVersion": 1,
+      "position": [
+        880,
+        5680
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "f3d5ed86-255e-534a-8c5b-fd2172dec94a",
+      "name": "Execute Command2",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -4896,
+        3424
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "6b286ed1-106a-5f66-80ea-b132e7a6fde1",
+      "name": "Execute Command3",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        2048,
+        4800
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "d15ce490-0938-5b0d-a54d-f39a995cbb3d",
+      "name": "Save prompt & \"image\"(only name) to disk",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        2112,
+        5008
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "d3bff0f9-4750-54a4-98c7-47eb916cc290",
+      "name": "Split Out1",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -4256,
+        4016
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "083644ca-1f08-5bbc-9343-3b8820b8d506",
+      "name": "smart filename extension based on $binary",
+      "type": "n8n-nodes-base.googleCloudStorage",
+      "typeVersion": 1,
+      "position": [
+        704,
+        4592
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "id": "d5c93a9c-5551-56e8-9422-bc56cbf7121f",
+      "name": "Error?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        288,
+        4784
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "b6fc164e-691a-50fb-882f-ee426645a7e4",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -192,
+        5664
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "bf9b9167-c996-5cff-94c4-660d0fd86f32",
+      "name": "Call 'Creative Sub-Agent'1",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "position": [
+        -2384,
+        3840
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "19fbc8fe-539e-52cc-8add-3522864200a8",
+      "name": "Edit Fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2176,
+        3840
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "bbc09036-874f-503f-b224-fc8d46cf354b",
+      "name": "Code in JavaScript1",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -576,
+        4320
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "5b519df2-bda2-52e1-99d2-bcd846f6cf89",
+      "name": "Check for approval2",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        224,
+        5024
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "alwaysOutputData": false,
+      "executeOnce": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {},
+      "id": "182d3895-22a1-54ad-a40d-9d2630bc5b71",
+      "name": "Insert row",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        -2096,
+        4384
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "b047ced9-38b3-5163-8afe-ea05c3da3a93",
+      "name": "Edit Fields13",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2960,
+        3840
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "1f5e649b-354b-5978-932a-45060580676f",
+      "name": "Get row(s)",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        -2784,
+        3840
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "479f1cf1-ba5b-5826-ae54-cd558770e770",
+      "name": "If4",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -3200,
+        3872
+      ]
+    }
+  ],
+  "connections": {
+    "Send message and wait for response1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields15",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields15": {
+      "main": [
+        [
+          {
+            "node": "Message a model1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory4": {
+      "ai_memory": [
+        [
+          {
+            "node": "Prompt Reviewer Agent1",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields16": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields17": {
+      "main": [
+        [
+          {
+            "node": "Remaining images?",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Edit Fields18": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields17",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields7": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields28",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command4": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields18",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields19": {
+      "main": [
+        [
+          {
+            "node": "Agent #0",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command9": {
+      "main": [
+        [
+          {
+            "node": "Send message and wait for response1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch3": {
+      "main": [
+        [
+          {
+            "node": "Send provider error message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send Final video6",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send Final video5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch4": {
+      "main": [
+        [
+          {
+            "node": "Aspect Ratio?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Switch3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Switch3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait 3 min1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get scene 2": {
+      "main": [
+        [
+          {
+            "node": "Switch4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate scene ": {
+      "main": [
+        [
+          {
+            "node": "Switch6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge4": {
+      "main": [
+        [
+          {
+            "node": "Upload a video1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Continue?": {
+      "main": [
+        [
+          {
+            "node": "Merge4",
+            "type": "main",
+            "index": 1
+          }
+        ],
+        [
+          {
+            "node": "Get feedback2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload a video1": {
+      "main": [
+        [
+          {
+            "node": "Merge5",
+            "type": "main",
+            "index": 1
+          }
+        ],
+        [
+          {
+            "node": "Eroare ytb connection",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields20": {
+      "main": [
+        [
+          {
+            "node": "Message a model1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields20",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields21",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send idea and wait7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields21": {
+      "main": [
+        [
+          {
+            "node": "Send idea and wait9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send idea and wait9": {
+      "main": [
+        [
+          {
+            "node": "Send idea and wait8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch5": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields22",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields7",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields29",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI3": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Postgres PGVector Store3",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Postgres PGVector Store3": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agent #0",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields22": {
+      "main": [
+        [
+          {
+            "node": "Execute Command4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Is voice msg?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory5": {
+      "ai_memory": [
+        [
+          {
+            "node": "Agent #0",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Default Data Loader1": {
+      "ai_document": [
+        [
+          {
+            "node": "Postgres PGVector Store5",
+            "type": "ai_document",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI5": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Postgres PGVector Store5",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Postgres PGVector Store5": {
+      "main": [
+        [
+          {
+            "node": "Send idea and wait6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait 3 min1": {
+      "main": [
+        [
+          {
+            "node": "Get scene 2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Final video7": {
+      "main": [
+        [
+          {
+            "node": "Wait 3 min1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pass?1": {
+      "main": [
+        [
+          {
+            "node": "Improve prompt",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send Final video8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze video1": {
+      "main": [
+        [
+          {
+            "node": "Postgres PGVector Store5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get feedback3": {
+      "main": [
+        [
+          {
+            "node": "Continue?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Final video1": {
+      "main": [
+        [
+          {
+            "node": "Get feedback3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Concatenate clips1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields16",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields23": {
+      "main": [
+        [
+          {
+            "node": "Prompt Reviewer Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields24": {
+      "main": [
+        [
+          {
+            "node": "Message a model1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prompt Reviewer Agent1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields27",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Self-Check1": {
+      "ai_tool": [
+        [
+          {
+            "node": "Message a model1",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Message a model1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields23",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields25": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send video and wait1": {
+      "main": [
+        [
+          {
+            "node": "Continue?3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Continue?3": {
+      "main": [
+        [
+          {
+            "node": "Batch of ",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Execute Command9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set error1": {
+      "main": [
+        [
+          {
+            "node": "Message a model1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a video1": {
+      "main": [
+        [
+          {
+            "node": "Send video and wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory6": {
+      "ai_memory": [
+        [
+          {
+            "node": "Message a model1",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Batch of ": {
+      "main": [
+        [
+          {
+            "node": "Concatenate clips1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Aggregate1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send invitation1": {
+      "main": [
+        [
+          {
+            "node": "Send idea and wait10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read/Write Files from Disk3": {
+      "main": [
+        [
+          {
+            "node": "Send a video1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read/Write Files from Disk4": {
+      "main": [
+        [
+          {
+            "node": "Send Final video1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge4",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields27": {
+      "main": [
+        [
+          {
+            "node": "Pass?1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP request tool (name withheld)": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agent #0",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command12": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields25",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Final video8": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields24",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send provider error message": {
+      "main": [
+        [
+          {
+            "node": "Set error1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch6": {
+      "main": [
+        [
+          {
+            "node": "Send Final video7",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send top-up message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send Final video10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields28": {
+      "main": [
+        [
+          {
+            "node": "Get director brief",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge5": {
+      "main": [
+        [
+          {
+            "node": "Analyze video1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aspect Ratio?": {
+      "main": [
+        [
+          {
+            "node": "Execute Command12",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Execute Command5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command5": {
+      "main": [
+        [
+          {
+            "node": "Execute Command14",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command14": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields25",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Improve prompt": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields26",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields26": {
+      "main": [
+        []
+      ]
+    },
+    "GetExecutionContents": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agent #0",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send idea and wait8": {
+      "main": [
+        [
+          {
+            "node": "Send idea and wait11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait2": {
+      "main": [
+        [
+          {
+            "node": "Get image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check for approval": {
+      "main": [
+        [
+          {
+            "node": "Check for approval1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Continue?4": {
+      "main": [
+        [
+          {
+            "node": "Delete an object from a bucket",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Save prompt & \"image\"(only name) to disk",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send message and wait for response2": {
+      "main": [
+        [
+          {
+            "node": "Get feedback4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get feedback4": {
+      "main": [
+        []
+      ]
+    },
+    "Loop Over Images": {
+      "main": [
+        [],
+        [
+          {
+            "node": "If4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get image": {
+      "main": [
+        [
+          {
+            "node": "Error?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If2": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields31",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields31": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Agent #0",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GetExecutionOverviewById": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agent #0",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get_All_Dirs": {
+      "ai_tool": [
+        []
+      ]
+    },
+    "Cleanup": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agent #0",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeleteFolderById": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agent #0",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get director brief": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "Execute Command",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Execute Command1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agent #0": {
+      "main": [
+        [
+          {
+            "node": "Set output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Remaining images?": {
+      "main": [
+        [
+          {
+            "node": "Remaining choices?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send confirmation2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Remaining choices?": {
+      "main": [
+        [
+          {
+            "node": "Concatenate clips1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Images",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge1": {
+      "main": [
+        [
+          {
+            "node": "Split Out2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields29": {
+      "main": [
+        [
+          {
+            "node": "Get director brief1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command": {
+      "main": [
+        [
+          {
+            "node": "Send confirmation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command1": {
+      "main": [
+        [
+          {
+            "node": "Send confirmation1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send confirmation2": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate image - nano banana pro": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get director brief1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Split Out1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has references?": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Generate image - nano banana pro1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields3": {
+      "main": [
+        [
+          {
+            "node": "Split Out4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out4": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get object data or metadata",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get object data or metadata": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields4": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate image - nano banana pro1": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields5": {
+      "main": [
+        [
+          {
+            "node": "Split Out5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out5": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items2": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields6",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get object data or metadata1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get object data or metadata1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields6": {
+      "main": [
+        [
+          {
+            "node": "Generate image - nano banana2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate image - nano banana2": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate image - nano banana": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has references?1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields5",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Generate image - nano banana",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields8": {
+      "main": [
+        [
+          {
+            "node": "Split Out6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out6": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items3": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields9",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get object data or metadata2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get object data or metadata2": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields9": {
+      "main": [
+        [
+          {
+            "node": "Generate image - gpt4o2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has references?2": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Generate image - gpt4o3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Get image1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get image1": {
+      "main": [
+        [
+          {
+            "node": "If3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If3": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate image - gpt4o2": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate image - gpt4o3": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a photo message": {
+      "main": [
+        [
+          {
+            "node": "Check for approval",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Send a photo message",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Create an object",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete an object from a bucket": {
+      "main": [
+        [
+          {
+            "node": "Execute Command3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out2": {
+      "main": [
+        []
+      ]
+    },
+    "Call 'Creative Sub-Agent'": {
+      "ai_tool": [
+        [
+          {
+            "node": "Agent #0",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is voice msg?": {
+      "main": [
+        [
+          {
+            "node": "Get a file",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields19",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a file": {
+      "main": [
+        [
+          {
+            "node": "Transcribe a recording1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transcribe a recording": {
+      "main": [
+        []
+      ]
+    },
+    "Edit Fields32": {
+      "main": [
+        [
+          {
+            "node": "Agent #0",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields11": {
+      "main": [
+        [
+          {
+            "node": "Split Out7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out7": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items4": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields12",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get object data or metadata3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get object data or metadata3": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields12": {
+      "main": [
+        [
+          {
+            "node": "Generate image - gpt-image-2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has references?3": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields11",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Generate image - gpt-image-",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate image - gpt-image-2": {
+      "main": [
+        [
+          {
+            "node": "Get image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate image - gpt-image-": {
+      "main": [
+        [
+          {
+            "node": "Get image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transcribe a recording1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields32",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Video Prompt generator",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Video Prompt generator",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check for approval1": {
+      "main": [
+        [
+          {
+            "node": "Continue?4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Has references?3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Has references?2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Has references?1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Has references?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields10": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Images",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set output": {
+      "main": [
+        [
+          {
+            "node": "Switch5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields33": {
+      "main": [
+        [
+          {
+            "node": "Call 'Creative Sub-Agent'1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields37": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "Create an object1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command3": {
+      "main": [
+        [
+          {
+            "node": "Send message and wait for response2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save prompt & \"image\"(only name) to disk": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Images",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error?": {
+      "main": [
+        [
+          {
+            "node": "Check for approval2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call 'Creative Sub-Agent'1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call 'Image prompt generation (routing for references)'": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript1": {
+      "main": [
+        [
+          {
+            "node": "Generate image - nano banana pro",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check for approval2": {
+      "main": [
+        []
+      ]
+    },
+    "Edit Fields13": {
+      "main": [
+        [
+          {
+            "node": "Get row(s)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s)": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields33",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If4": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields13",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}
