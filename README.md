@@ -42,6 +42,8 @@ Import `workflow/video-pipeline.skeleton.json` into n8n to explore the graph (Wo
 
 Solo project: I designed and built the workflow.
 
+**About this repository:** I exported the structure and packaged it for GitHub (this README, the SVG diagram, screenshots) with help from an AI assistant, which is why the single commit lists Claude as co-author.
+
 ## Status and limitations
 
 - Prototype, unfinished. I stopped extending it in n8n and started a Node.js version of the same idea.
