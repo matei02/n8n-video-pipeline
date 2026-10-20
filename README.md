@@ -1,12 +1,12 @@
-# AI video generation pipeline in n8n (structure showcase)
+# AI video generation pipeline in n8n
 
 My largest n8n workflow (185 nodes): from an idea sent on Telegram (text or voice) to a finished short video, with AI agents writing the plan and the prompts, several image and video generation APIs, ffmpeg for editing, and me approving each step from Telegram. This repo shows the **structure only**: every node, its type and every connection, with all parameters and prompts removed on purpose.
 
 ![Tour of the workflow on the n8n canvas: overview, then left, middle and right part](docs/demo.gif)
 
-> The GIF shows the structure-only export imported into a local n8n instance. Nothing runs here: the export has no parameters, prompts or credentials. In that n8n 2.4.7 test instance the Execute Command nodes appear as unknown ("?") nodes.
+> The GIF shows the structure-only export imported into a local n8n instance. Nothing runs here: the export has no parameters, prompts or credentials. The Execute Command nodes (ffmpeg and shell steps) are disabled by default since n8n 2.0 for security reasons; to see them after importing, enable them with `NODES_EXCLUDE="[]"` as described in the n8n 2.0 breaking changes.
 
-**Full diagram (vector, zoom in as far as you like):** [docs/video-pipeline.svg](docs/video-pipeline.svg)
+**Full canvas as a vector image (zoom in as far as you like):** [docs/video-pipeline.svg](docs/video-pipeline.svg)
 
 ## Why only the structure
 
@@ -24,11 +24,9 @@ The prompts and the way the agents work together are the part I spent the most t
 
 ## Architecture
 
-![Structure of the workflow](docs/video-pipeline.svg)
+![The whole workflow on the n8n canvas (vector export)](docs/video-pipeline.svg)
 
-Colours: AI agents and models, Telegram (human in the loop), HTTP calls to external generation APIs, shell/ffmpeg, storage, sub-workflows and flow control. Dashed lines are AI connections (model, memory, tools); faded boxes are disabled nodes.
-
-![The same workflow on the n8n canvas](docs/n8n-canvas.png)
+The image above is the n8n canvas itself, exported as a vector SVG (printed from the editor to PDF and converted), so node names stay sharp when you zoom in. The two sticky notes show n8n's default text because their content was removed with everything else.
 
 ## Tech stack
 
@@ -42,7 +40,7 @@ Import `workflow/video-pipeline.skeleton.json` into n8n to explore the graph (Wo
 
 Solo project: I designed and built the workflow.
 
-**About this repository:** I exported the structure and packaged it for GitHub (this README, the SVG diagram, screenshots) with help from an AI assistant, which is why the single commit lists Claude as co-author.
+**About this repository:** I exported the structure and packaged it for GitHub (this README, the canvas SVG, screenshots) with help from an AI assistant, which is why the commits list Claude as co-author.
 
 ## Status and limitations
 
