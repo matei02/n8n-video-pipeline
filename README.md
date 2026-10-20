@@ -4,7 +4,7 @@ My largest n8n workflow (185 nodes): from an idea sent on Telegram (text or voic
 
 ![Tour of the workflow on the n8n canvas: overview, then left, middle and right part](docs/demo.gif)
 
-> The GIF shows the structure-only export imported into a local n8n instance. Nothing runs here: the export has no parameters, prompts or credentials. The Execute Command nodes (ffmpeg and shell steps) are disabled by default since n8n 2.0 for security reasons; to see them after importing, enable them with `NODES_EXCLUDE="[]"` as described in the n8n 2.0 breaking changes.
+> The structure of the workflow in n8n. It does not run: it has no parameters, prompts or credentials. The Execute Command nodes (ffmpeg and shell steps) are disabled by default since n8n 2.0 for security reasons; to see them after importing, enable them with `NODES_EXCLUDE="[]"` as described in the n8n 2.0 breaking changes.
 
 **Full canvas as a vector image (zoom in as far as you like):** [docs/video-pipeline.svg](docs/video-pipeline.svg)
 
@@ -12,7 +12,7 @@ My largest n8n workflow (185 nodes): from an idea sent on Telegram (text or voic
 
 The prompts and the way the agents work together are the part I spent the most time on, so I keep them private. The structure is enough to show the architecture, and I can explain any node in detail. The workflow was a prototype: it is unfinished, and I later started rebuilding the same idea as a Node.js application.
 
-## What the pipeline does (from the node graph)
+## What the pipeline does
 
 1. **Input on Telegram.** A Telegram trigger receives an idea; voice messages are transcribed (OpenAI and Gemini transcription nodes). A scheduled trigger can also send an invitation to start.
 2. **Main agent with tools.** An AI agent with memory decides what to do next. Its tools include: listing and cleaning up earlier runs (shell commands), a PGVector store with OpenAI embeddings (knowledge from earlier videos), and a separate "Creative Sub-Agent" workflow.
